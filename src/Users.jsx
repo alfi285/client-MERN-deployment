@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import './users.css';
+import './Users.css';
 import axios from "axios";
 
 const Users = () => {
