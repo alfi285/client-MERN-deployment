@@ -1,0 +1,149 @@
+.addUsers{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.userForm{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    padding: 50px;
+    padding-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0,0 ,0.8);
+    width: 25vw;
+    height: 60vh;
+    font-size: 23px;
+    color: #206b57;
+    font-weight: bold;
+    background-color: white;
+}
+
+.userHead{
+    text-align: center;
+    color: #7f7526;
+    font-size: 35px; 
+    background-color: white; 
+    padding: 20px; 
+}
+
+.addUsers form input{
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #c0b45c;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0,0 ,0.5);
+}
+
+.addUsers form ::placeholder{
+    font-style: italic;
+}
+
+.addUsers form button{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #7f7526;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0,0 ,0.5);
+}
+.addUsers form button:hover{
+    background-color: #206b57;
+}
+
+.userTable{
+    height: auto;
+    width: 60vw;
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.userTable th{
+    border-bottom: 2px solid #206b57;
+    color: #206b57;
+    font-size: 20px;
+}
+
+.userTable td{
+    padding: 5px;
+}
+.userDisplayContainer{
+ display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.userDisplay{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    box-shadow: 0 0 10px 0;
+    background-color: white;
+
+}
+
+
+    /* ========== ✅ Responsive Breakpoints ========== */
+
+/*Tablets (max-width: 1024px) */
+
+ @media screen and (max-width: 1024px) {
+  .userForm {
+    width: 50vw;
+    height: auto;
+    font-size: 20px;
+  }
+
+  .userTable {
+    width: 90vw;
+  }
+}
+
+/* Phones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .userForm {
+    width: 90vw;
+    height: auto;
+    font-size: 18px;
+    padding: 30px 20px;
+  }
+
+  .userHead {
+    font-size: 28px;
+  }
+
+  .userTable {
+    font-size: 16px;
+    width: 95vw;
+    overflow-x: auto;
+  }
+}
+
+/* Small phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .userForm {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .userTable th,
+  .userTable td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .userHead {
+    font-size: 24px;
+  }
+}
